@@ -1,0 +1,45 @@
+<header class="pt-4 pb-4 bg-secundary">
+  <div class="container xl:p-0">
+    <nav class="flex justify-between pt-2 pb-2">
+      <a class="nav__link-brand nav-link" href="/">
+        <include src="views/header/logo.html"></include>
+      </a>
+      <button class="block lg:hidden p-0 sm:p-2 navbar-toggler" type="button">
+        <i class="fa-solid fa-bars text-[1.5rem] nav-link"></i>
+      </button>
+  
+      <div class="hidden absolute top-0 right-0 m-0 w-[70vw] max-w-[200px] h-screen bg-white offcanvas">
+        <div>
+          <button type="button" class="m-5 close-menu">
+            <i class="fa-solid fa-xmark text-[2rem] text-grey hover:text-black"></i>
+          </button>
+        </div>
+        <div class="p-[1rem]">
+          <ul class="nav__list-links">
+            <li>
+              <a class="nav-link-xs nav__link-players" href="players.html">Participantes</a>
+            </li>
+            <li>
+              <a class="nav-link-xs nav__link-about" href="about.html">Sobre la liga</a>
+            </li>
+            <li>
+              <a class="nav-link-xs nav__link-inscription text-grey cursor-default pointer-events-none" disabled>Inscripción</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="hidden lg:flex justify-end flex-grow-1 gap-[2vw] my-auto">
+        <li>
+          <a class="nav-link nav__link-players" href="players.html">Participantes</a>
+        </li>
+        <li>
+          <a class="nav-link nav__link-about" href="about.html">Sobre la liga</a>
+        </li>
+        <li>
+          <a class="nav-link nav__link-inscription text-grey cursor-default pointer-events-none" disabled>Inscripción</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

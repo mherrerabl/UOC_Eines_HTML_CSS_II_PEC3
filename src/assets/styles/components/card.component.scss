@@ -1,0 +1,23 @@
+.card {
+    @apply flex flex-auto flex-col break-words border-grey border-[1px] bg-white;
+}
+
+.card-body {
+    @apply p-4;
+}
+
+.card-img {
+    @apply w-full;
+}
+
+.card-title {
+    @apply mb-2 leading-[1.2];
+}
+
+.card-text {
+    @apply text-[1.1rem];
+}
+
+.card-footer {
+    @apply bg-grey-light border-grey border-t-[1px] p-4 text-center;
+}

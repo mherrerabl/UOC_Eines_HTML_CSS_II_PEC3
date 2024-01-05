@@ -1,0 +1,19 @@
+.modal {
+    @apply w-[95%] max-w-[500px] rounded-lg z-20;
+}
+
+.modal-open {
+    @apply bg-grey opacity-70 h-[100vh] w-[100vw] position-center z-10;
+}
+
+.modal-header {
+    @apply p-4 text-left border-grey border-b-[1px] flex justify-between items-center;
+}
+
+.modal-body {
+    @apply p-4;
+}
+
+.modal-footer {
+    @apply p-4 text-left border-grey border-t-[1px] flex justify-end;
+}

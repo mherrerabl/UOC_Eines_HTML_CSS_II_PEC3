@@ -1,0 +1,15 @@
+.nav-link-xs {
+    @apply block lg:flex text-black lg:text-white pb-[.5rem] pt-[.5rem] hover:text-primary focus:text-primary;
+
+    &.active {
+        @apply text-primary font-semibold;
+    }
+}
+
+.nav-link {
+    @apply text-white hover:text-primary focus:text-primary;
+
+    &.active {
+        @apply text-primary font-semibold;
+    }
+}

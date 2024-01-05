@@ -1,0 +1,70 @@
+<h3>Contactanos</h3>
+<p>Para cualquier duda no dude en contactarnos:</p>
+<a class="block mb-2" href="mailto:racquetsleague@racquetsleague.com">racquetsleague@racquetsleague.com</a>
+<a class="block mb-2" href="tel:+34931998850">931998850</a>
+<button type="button" id="btnModalContact" class="btn-primary mb-4">
+    Formulario de contacto
+</button>
+
+<dialog class="modal" id="modalContact">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalFormLabel">Formulario de contacto</h5>
+            <button type="button" class="border-none close-modal">
+                <i class="fa-solid fa-xmark text-[2rem] text-grey hover:text-black"></i>
+            </button>
+        </div>
+        
+        <form id="contact-form" name="contact" method="POST" netlify>
+            <div class="modal-body">
+                <div>
+                    <label class="input-group">
+                        <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                        <input type="text" class="form-control" id="name-user" name="name-user" placeholder="Nombre y Apellido" pattern="[a-zA-Z\s]{1,100}" required>
+                    </label>
+                    <div class="help-message">
+                        <div class="help-message__required">
+                            <small>Ingrese su nombre y apellido/s.</small>
+                        </div>
+                        <div class="help-message__pattern">
+                            <small>Se permite hasta 100 carácteres.</small>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="input-group">
+                        <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                        <input type="email" class="form-control" id="email-user" name="email-user" placeholder="ejemplo@ejemplo.com" pattern="[A-Za-z0-9._+\-']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" required>
+                    </label>
+                    <div class="help-message">
+                        <div class="help-message__required">
+                            <small>Ingrese su correo electrónico.</small>
+                        </div>
+                        <div class="help-message__pattern">
+                            <small>El correo debe ser parecido a: <span>ejemplo@ejemplo.com</span>.</small>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="input-group">
+                        <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                        <textarea class="form-control" id="message-user" placeholder="Envienos su mensaje" pattern="[a-zA-Z0-9\s]{1,200}" required></textarea>
+                    </label>
+                    <div class="help-message">
+                        <div class="help-message__required">
+                            <small>Ingrese el mensaje que nos quiere transmitir.</small>
+                        </div>
+                        <div class="help-message__pattern">
+                            <small>Se permite hasta 200 carácteres.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <input type="submit" value="Enviar" class="btn-primary">
+            </div>
+        </form>
+        
+        <include src="./views/forms/message-form.html"></include>
+    </div>
+</dialog>

@@ -1,0 +1,23 @@
+.input-group {
+    @apply flex flex-wrap items-stretch w-full mt-2;
+}
+
+.input-group-text {
+    @apply flex items-center border-grey border-[1px] py-[.375rem] px-3 bg-grey-light rounded-l-md;
+
+    i {
+        @apply text-secundary;
+    }        
+}
+
+.form-control {
+    @apply rounded-r-md border-grey border-[1px] w-[1%] flex-auto min-w-0 py-[.375rem] px-3;
+}
+
+.help-message {
+    @apply text-red hidden;
+
+    &.invalid {
+        @apply block;
+    }
+}

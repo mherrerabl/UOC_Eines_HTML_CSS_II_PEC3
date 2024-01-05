@@ -1,0 +1,11 @@
+.btn-primary {
+    @apply px-3 py-[.375rem] rounded-md bg-primary hover:bg-primary-light focus:bg-primary-light cursor-pointer;
+}
+
+.btn-info {
+    @apply px-3 py-[.375rem] rounded-md bg-third hover:bg-third-light focus:bg-third-light cursor-pointer;
+}
+
+.btn-sm {
+    @apply py-[.35rem] px-[.6rem] text-[.875rem] rounded;
+}

@@ -1,0 +1,48 @@
+
+@layer base {
+    /*-------------------------------*\
+    Text elements
+    \*-------------------------------*/
+    body {
+        @apply text-[1.1rem];
+    }
+    
+    h2 {
+        @apply font-title text-h2 text-black mb-7;
+    }
+
+    h3 {
+        @apply font-title text-h3 text-black;
+    }
+
+    h4 {
+        @apply font-title text-h4 text-black;
+    }
+
+    h5 {
+        @apply font-title text-h5 text-black;
+    }
+
+    p,
+    li,
+    label,
+    i,
+    input,
+    textarea {
+        @apply font-text text-black;
+    }
+
+    button {
+        @apply font-text;
+    }
+
+    a {
+        @apply font-text text-primary hover:text-primary-dark focus:text-primary-dark;
+    }
+
+    dialog {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

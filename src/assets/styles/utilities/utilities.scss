@@ -1,0 +1,5 @@
+@layer utilities {
+    .position-center {
+        @apply absolute top-[50%] left-[50%] w-full translate-x-[-50%] translate-y-[-50%];
+    }
+}

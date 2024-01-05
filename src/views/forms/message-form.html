@@ -1,0 +1,21 @@
+
+<div class="message-form fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[100] hidden w-dvw h-dvh text-center bg-modal">
+  <h3 class="message-form__title absolute top-[20%] left-[50%] translate-x-[-50%] translate-y-[-20%] w-fit p-4 bg-third [&.success]:text-black [&.success]:bg-success [&.error]:text-black [&.error]:bg-error"></h3>
+  <div class="message-form__status position-center">
+    <div class="message-form__status__spinner relative inline-block align-top border-4 border-grey border-l-third animate-loader-spinner w-[10dvh] h-[10dvh] rounded-full after:w-[10dvh] after:h-[10dvh] after:rounded-full 
+                [&.success]:border-success [&.success]:transition-[border-opacity] [&.success]:duration-500 [&.success]:ease-out [&.success]:animate-none
+                [&.error]:border-error [&.error]:transition-[border-opacity] [&.error]:duration-500 [&.error]:ease-out [&.error]:animate-none">
+      <div class="message-form__status__spinner__mark 
+                  [&.success]:after:scale-x-[-1] [&.success]:after:rotate-[223deg] [&.success]:after:animate-checkmark
+                  [&.success]:after:absolute [&.success]:after:top-[5dvh] [&.success]:after:left-[2.27dvh] [&.success]:after:w-[2.5dvh] [&.success]:after:h-[5dvh] [&.success]:after:content-['']
+                  [&.success]:after:border-t-4 [&.success]:after:border-t-success [&.success]:after:border-r-4 [&.success]:after:border-r-success [&.success]:after:opacity-100 [&.success]:after:origin-top-left
+                  [&.error]:absolute [&.error]:top-[50%] [&.error]:left-[50%] [&.error]:animate-crossmark
+                  [&.error]:before:absolute [&.error]:before:top-[-4dvh] [&.error]:before:w-[2px] [&.error]:before:h-[8lvh] [&.error]:before:content-[''] [&.error]:before:bg-error [&.error]:before:rotate-45 
+                  [&.error]:after:absolute [&.error]:after:top-[-4dvh] [&.error]:after:w-[2px] [&.error]:after:h-[8lvh] [&.error]:after:content-[''] [&.error]:after:bg-error [&.error]:after:-rotate-45"></div>
+    </div>
+  </div>
+  <div class="message-form__info absolute top-[80%] left-[50%] translate-x-[-50%] translate-y-[-80%] w-fit">
+    <h4 class="message-form__info__title [&.success]:text-success [&.error]:text-error"></h4>
+    <p class="message-form__info__text [&.success]:text-success [&.error]:text-error"></p>
+  </div>
+</div> 

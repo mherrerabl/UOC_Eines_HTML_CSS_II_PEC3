@@ -1,0 +1,7 @@
+.list-group {
+    @apply flex flex-col m-0 p-0 py-4;
+}
+
+.list-group-item {
+    @apply border-grey [&:not(:last-child)]:border-b-[1px] px-4 py-2 text-[1.1rem];
+}

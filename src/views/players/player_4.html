@@ -1,0 +1,35 @@
+<div class="card flex-auto sm:flex-col-2 lg:flex-col-3">
+    <picture>                 
+      <source srcset="/src/assets/images/players/player_4/player_4.webp" type="image/webp">
+      <img src="/src/assets/images/players/player_4/player_4.jpg" class="card-img"  alt="Retrato Maite Aguirre">
+    </picture>
+    <div class="card-body flex-1">
+      <h5 class="card-title">Maite Aguirre</h5>
+      <p class="card-text">Tiempo jugando: 5 años.</p>
+      <p class="card-text">Nivel: B - 4.5.</p>
+      <p class="card-text">Brazo hábil: derecho e izquierdo.</p>  
+    </div>
+    <dialog class="modal" id="modalPlayer4">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Maite Aguirre</h5>
+          <button type="button" class="border-none close-modal">
+          <i class="fa-solid fa-xmark text-[2rem] text-grey hover:text-black"></i>
+        </button>
+        </div>
+        <ul class="modal-body list-group">
+          <li class="list-group-item">Partidos jugados en Racquet League: </li>
+          <li class="list-group-item">Ganado: </li>
+          <li class="list-group-item">Perdido: </li>
+          <li class="list-group-item">% de victorias: </li>
+          <li class="list-group-item">Puntos: </li>
+        </ul>
+        <div class="position-center bg-third h-[10dvh]">
+          <h3 class="position-center text-center">La liga inicia el <time datetime="2024-01-13">13/01/2024</time></h3>
+        </div>
+      </div>
+    </dialog>
+    <div class="card-footer">
+      <button class="btn-info btn-sm btn-player" id="btnModalPlayer4">Más información</button>
+    </div>
+</div>
