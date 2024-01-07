@@ -44,12 +44,15 @@ module.exports = {
       'h2': 'calc(1.325rem + .9vw)',
       'h3': 'calc(1.3rem + .6vw)',
       'h4': 'calc(1.275rem + .3vw)', 
-      'h5': '1.25rem'
+      'h5': '1.25rem',
+      'icon': '2rem',
+      'icon-small': '1.5rem'
     },
     extend: {
       margin: {
         'container-top': '50px',
-        'container-bottom': '70px'
+        'container-bottom': '70px',
+        'section-bottom': '75px'
       },
       gridTemplateColumns: {
         'about-origin': '35% 60%'
