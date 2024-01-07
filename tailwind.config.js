@@ -47,6 +47,10 @@ module.exports = {
       'h5': '1.25rem'
     },
     extend: {
+      margin: {
+        'container-top': '50px',
+        'container-bottom': '70px'
+      },
       gridTemplateColumns: {
         'about-origin': '35% 60%'
       },

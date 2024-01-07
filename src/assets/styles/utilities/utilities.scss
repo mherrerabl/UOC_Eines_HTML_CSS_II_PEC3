@@ -2,4 +2,8 @@
     .position-center {
         @apply absolute top-[50%] left-[50%] w-full translate-x-[-50%] translate-y-[-50%];
     }
+
+    .container {
+        @apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1200px];
+    }
 }
